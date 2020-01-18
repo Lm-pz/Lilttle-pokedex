@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-image: url(7184c1e3d125a8f70d72a0dabd24fab9.jpg); }
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  width: 36rem;
+  margin: 0 auto;
+  height: 45rem; }
+  .card__name {
+    margin: 3rem 0;
+    font-size: 3rem;
+    font-weight: 400;
+    transition: all .4s;
+    background-image: linear-gradient(to right, orange, darkblue);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-transform: capitalize; }
+    .card__name:hover {
+      transform: skewX(12deg) scale(1.1); }
+  .card__image {
+    width: 16rem;
+    height: 16rem;
+    margin-bottom: 3rem; }
+  .card__info {
+    margin: 0 auto;
+    font-weight: 200;
+    font-size: 2rem; }
+  .card__side {
+    text-align: center;
+    height: 45rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    width: 36rem; }
+    .card__side--front {
+      background-color: whitesmoke; }
+    .card__side--back {
+      background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4f7705ec-8c49-4eed-a56e-c21f3985254c/dah43cy-a8e121cb-934a-40f6-97c7-fa2d77130dd5.png/v1/fill/w_759,h_1053,strp/pokemon_card_backside_in_high_resolution_by_atomicmonkeytcg_dah43cy-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQyMCIsInBhdGgiOiJcL2ZcLzRmNzcwNWVjLThjNDktNGVlZC1hNTZlLWMyMWYzOTg1MjU0Y1wvZGFoNDNjeS1hOGUxMjFjYi05MzRhLTQwZjYtOTdjNy1mYTJkNzcxMzBkZDUucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.9GzaYS7sd8RPY5FlHca09J9ZQZ9D9zI69Ru-BsbkLDA);
+      transform: rotateY(180deg);
+      background-size: 36rem 45rem; }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+
+.button {
+  text-decoration: none;
+  width: 30rem;
+  height: 25rem;
+  font-size: 2rem;
+  font-weight: 200;
+  padding: 2rem;
+  background-image: linear-gradient(to right top, rgba(255, 255, 255, 0.65) 0%, rgba(0, 0, 0, 0.65) 50%, rgba(255, 0, 0, 0.65) 100%);
+  border-radius: 50%;
+  color: white; }
+
+
+/*# sourceMappingURL=build.css.map*/
